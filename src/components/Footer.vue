@@ -101,7 +101,7 @@ export default {
             position: absolute;
             right: 0px;
             top: -80px;
-            z-index: -1;
+            z-index: 0;
         }
 
     }
@@ -130,6 +130,7 @@ export default {
         height: 130px;
         width: 100%;
         z-index: 2;
+        position: relative;
         background-color: #1c1c1c;
         
         .container {

@@ -38,6 +38,8 @@ export default {
     .banner_shop {
       height: 150px;
       width: 100%;
+      position: relative;
+      z-index: 2;
       background-color: #0282f9;
       div {
         display: flex;
