@@ -74,13 +74,14 @@
 </template>
 
 <script>
-
 export default {
   name: 'Footer',
 }
 </script>
 
 <style lang="scss" scoped>
+    @import "../style/variables.scss"; 
+    
     .container {
         position: relative;
         width: 70%;
@@ -131,7 +132,7 @@ export default {
         width: 100%;
         z-index: 2;
         position: relative;
-        background-color: #1c1c1c;
+        background-color: $colorGrey;
         
         .container {
             display: flex;

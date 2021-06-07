@@ -16,8 +16,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import "../style/variables.scss"; 
     main {
-        background-color: #1c1c1c;
+        background-color: $colorGrey;
     }
     .container {
         width: 70%;
