@@ -1,8 +1,17 @@
 <template>
   <div id="app">
-    <Header />
-    <Main />
-    <Footer />
+    <header>
+      <Header />
+    </header>
+
+    <main>
+      <Main />
+      <BannerShop />
+    </main>
+
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 
@@ -10,12 +19,14 @@
 import Header from './components/Header.vue'; 
 import Main from './components/Main.vue';  
 import Footer from './components/Footer.vue'
+import BannerShop from './components/BannerShop.vue'
 
 export default {
   name: 'App',
   components: {
     Header, 
     Main,
+    BannerShop,
     Footer
   }
 }
@@ -28,5 +39,4 @@ export default {
     padding: 0;
     font-family: 'Oswald', sans-serif;
   }
-
 </style>

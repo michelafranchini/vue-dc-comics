@@ -25,6 +25,7 @@ export default {
         margin: auto;
         display: flex;
         align-items: center;
+        z-index: 2;
 
         p {
             font-size: 30px;
