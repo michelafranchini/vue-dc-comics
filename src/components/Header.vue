@@ -1,23 +1,28 @@
 <template>
-  <div id="app">
-    <header>
-        <div class="container">
-            <img src="../assets/img/dc-logo.png" alt="Logo DC">
-            <ul>
-                <li v-for="(link, index) in links" :key="index">
-                    <a :href="link.link"> {{link.text}}</a>
-                </li>
-                
-            </ul>
-        </div>
-    </header>
-  </div>
+  <header>
+      <div class="container navbar">
+          <img src="../assets/img/dc-logo.png" alt="Logo DC">
+          <ul>
+              <li v-for="(link, index) in links" :key="index">
+                  <a :href="link.link"> {{link.text}}</a>
+              </li>
+          </ul>
+      </div>
+
+      <div>
+        <Jumbotron />
+      </div>
+  </header>
 </template>
 
 <script>
+import Jumbotron from '../components/Jumbotron.vue'; 
 
 export default {
   name: 'Header',
+  components: {
+    Jumbotron
+  },
   data () {
       return {
           links: [
@@ -78,7 +83,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    header {
+    .navbar {
         display: flex;
         align-items: center;
         height: 120px;

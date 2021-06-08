@@ -1,37 +1,35 @@
 <template>
-  <div id="app">
-    <main>
-        <div class="container">
-            <p>Content container</p>
-        </div>
-    </main>
+  <div class="main_content">
+      <div class="container">
+        <Comics />
+      </div>
   </div>
 </template>
 
 <script>
-
+import Comics from "../components/Comics.vue"
 export default {
   name: 'Main',
+  components: {
+    Comics, 
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-    @import "../style/variables.scss"; 
-    main {
-        background-color: $colorGrey;
-    }
+@import "../style/variables";   
     .container {
         width: 70%;
-        height: 150px;
+        height: 100%;
         margin: auto;
         display: flex;
         align-items: center;
         z-index: 2;
+    }
 
-        p {
-            font-size: 30px;
-            color: white;
-        }
+    .main_content {
+      padding: 70px 0;
+      background-color: $colorGrey;
     }
 
 </style>

@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <header>
-      <Header />
-    </header>
+    <Header />
 
     <main>
       <Main />
       <BannerShop />
     </main>
 
-    <footer>
-      <Footer />
-    </footer>
+    <Footer />
+ 
   </div>
 </template>
 
